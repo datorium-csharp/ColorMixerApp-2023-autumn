@@ -34,12 +34,18 @@
             this.numericRed = new System.Windows.Forms.NumericUpDown();
             this.numericGreen = new System.Windows.Forms.NumericUpDown();
             this.numericBlue = new System.Windows.Forms.NumericUpDown();
+            this.sliderRed = new System.Windows.Forms.TrackBar();
+            this.sliderGreen = new System.Windows.Forms.TrackBar();
+            this.sliderBlue = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.redBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericRed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericBlue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderRed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderGreen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderBlue)).BeginInit();
             this.SuspendLayout();
             // 
             // redBox
@@ -108,11 +114,44 @@
             this.numericBlue.TabIndex = 6;
             this.numericBlue.ValueChanged += new System.EventHandler(this.numericBlue_ValueChanged);
             // 
+            // sliderRed
+            // 
+            this.sliderRed.Location = new System.Drawing.Point(63, 377);
+            this.sliderRed.Maximum = 255;
+            this.sliderRed.Name = "sliderRed";
+            this.sliderRed.Size = new System.Drawing.Size(200, 45);
+            this.sliderRed.TabIndex = 7;
+            this.sliderRed.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.sliderRed.Scroll += new System.EventHandler(this.sliderRed_Scroll);
+            // 
+            // sliderGreen
+            // 
+            this.sliderGreen.Location = new System.Drawing.Point(322, 377);
+            this.sliderGreen.Maximum = 255;
+            this.sliderGreen.Name = "sliderGreen";
+            this.sliderGreen.Size = new System.Drawing.Size(209, 45);
+            this.sliderGreen.TabIndex = 8;
+            this.sliderGreen.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.sliderGreen.Scroll += new System.EventHandler(this.sliderGreen_Scroll);
+            // 
+            // sliderBlue
+            // 
+            this.sliderBlue.Location = new System.Drawing.Point(599, 377);
+            this.sliderBlue.Maximum = 255;
+            this.sliderBlue.Name = "sliderBlue";
+            this.sliderBlue.Size = new System.Drawing.Size(200, 45);
+            this.sliderBlue.TabIndex = 9;
+            this.sliderBlue.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.sliderBlue.Scroll += new System.EventHandler(this.sliderBlue_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 470);
+            this.ClientSize = new System.Drawing.Size(1032, 505);
+            this.Controls.Add(this.sliderBlue);
+            this.Controls.Add(this.sliderGreen);
+            this.Controls.Add(this.sliderRed);
             this.Controls.Add(this.numericBlue);
             this.Controls.Add(this.numericGreen);
             this.Controls.Add(this.numericRed);
@@ -121,13 +160,18 @@
             this.Controls.Add(this.redBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            
             ((System.ComponentModel.ISupportInitialize)(this.redBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericRed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericGreen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericBlue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderRed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderGreen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sliderBlue)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,5 +183,8 @@
         private NumericUpDown numericRed;
         private NumericUpDown numericGreen;
         private NumericUpDown numericBlue;
+        private TrackBar sliderRed;
+        private TrackBar sliderGreen;
+        private TrackBar sliderBlue;
     }
 }

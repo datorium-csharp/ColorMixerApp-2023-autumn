@@ -23,7 +23,7 @@ namespace ColorMixerApp_2023_autumn
 
             redBox.BackColor = Color.FromArgb(redValue, greenValue, blueValue);
 
-            this.BackColor = Color.FromArgb(redMixerValue, greenMixerValue, blueMixerValue);
+            SetBackgroudColor();
         }
 
         private void numericGreen_ValueChanged(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace ColorMixerApp_2023_autumn
 
             greenBox.BackColor = Color.FromArgb(redValue, greenValue, blueValue);
 
-            this.BackColor = Color.FromArgb(redMixerValue, greenMixerValue, blueMixerValue);
+            SetBackgroudColor();
         }
 
         private void numericBlue_ValueChanged(object sender, EventArgs e)
@@ -49,7 +49,30 @@ namespace ColorMixerApp_2023_autumn
 
             blueBox.BackColor = Color.FromArgb(redValue, greenValue, blueValue);
 
-            this.BackColor = Color.FromArgb(redMixerValue, greenMixerValue, blueMixerValue);
+            SetBackgroudColor();
         }
+
+        private void sliderRed_Scroll(object sender, EventArgs e)
+        {
+            numericRed.Value = sliderRed.Value;
+        }
+
+        private void sliderGreen_Scroll(object sender, EventArgs e)
+        {
+            numericGreen.Value = sliderGreen.Value;
+        }
+
+        private void sliderBlue_Scroll(object sender, EventArgs e)
+        {
+            numericBlue.Value = sliderBlue.Value;
+        }
+
+        private void SetBackgroudColor()
+        {
+            this.BackColor = Color.FromArgb(redMixerValue, greenMixerValue, blueMixerValue);
+            this.Text = $"RGB value ({redMixerValue}, {greenMixerValue}, {blueMixerValue})";
+        }
+
     }
+
 }
