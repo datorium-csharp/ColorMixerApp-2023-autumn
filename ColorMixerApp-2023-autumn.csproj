@@ -7,6 +7,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Oxygen-Icons.org-Oxygen-Actions-fill-color.256.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Oxygen-Icons.org-Oxygen-Actions-fill-color.256.ico" />
+  </ItemGroup>
 
 </Project>

@@ -11,6 +11,7 @@ namespace ColorMixerApp_2023_autumn
         public Form1()
         {
             InitializeComponent();
+            this.Text = "El's Color Mixer";
         }
 
         private void numericRed_ValueChanged(object sender, EventArgs e)

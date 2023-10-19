@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.redBox = new System.Windows.Forms.PictureBox();
             this.greenBox = new System.Windows.Forms.PictureBox();
             this.blueBox = new System.Windows.Forms.PictureBox();
@@ -148,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 505);
+            this.ClientSize = new System.Drawing.Size(871, 456);
             this.Controls.Add(this.sliderBlue);
             this.Controls.Add(this.sliderGreen);
             this.Controls.Add(this.sliderRed);
@@ -158,9 +159,9 @@
             this.Controls.Add(this.blueBox);
             this.Controls.Add(this.greenBox);
             this.Controls.Add(this.redBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
-            
+            this.Text = "z+";
             ((System.ComponentModel.ISupportInitialize)(this.redBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBox)).EndInit();
